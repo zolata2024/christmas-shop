@@ -281,10 +281,10 @@ footer {
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
-    position:relative;
+    position: relative;
 }
 
-.modal.active{
+.modal.active {
     opacity: 1;
     z-index: 10;
 }
@@ -314,13 +314,14 @@ footer {
     font-weight: bold;
 }
 
-.modal h2{
+.modal h2 {
     color: whitesmoke;
 }
-.close-modal{
+
+.close-modal {
     position: absolute;
-    top:20px;
-    right:20px;
+    top: 20px;
+    right: 20px;
     width: 22px;
     height: 22px;
     border: none;
@@ -329,4 +330,107 @@ footer {
     cursor: pointer;
     background: none;
     color: whitesmoke;
+}
+
+@media all and (max-with: 1280px) {
+    .t1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .t2 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .t1 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .t2 {
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        gap: 25px;
+    }
+
+    .navigation button {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 40px 0;
+    }
+    .hero img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    .hero h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+.hero p{
+    text-align: center;
+    font-size: 16px;
+}
+.hero button{
+    margin: 0 auto ;
+    display: block;
+} 
+.herotext {
+    border-left: none;
+    padding-left: 0;
+}
+.about-box{
+    flex-direction: column;
+}
+.about-box img{
+    height: auto;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+.about-part p{
+    font-size: 16px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about h2{
+    font-size:28px;
+}
+
+.about-part button {
+    display: block;
+    margin: 0 auto;
+}
+.gifts{
+    flex-direction: column;
+    gap: 60px;
+}
+.tr{
+    width: 90%;
+    max-width: 420px;
+}
+.footer-bottom, .footer-top{
+    flex-direction: column;
+    gap: 20px;
+}
+.modal{
+    padding: 15px;
+}
+}
+html{
+    scroll-behavior: smooth;
 }
